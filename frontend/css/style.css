@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+.cupCoffe_main{
+
+}
+.main_greeting {
+    
+}
+.header_body {
+    width: 100%;
+    height: 100vh;
+}
+body {
+        background-color: #ffff40; 
+}
+.header_links {
+    color: black;
+    background-color: #ffff40;
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+}
+.header_links li {
+    list-style-type: none;
+    margin-right: 20px;
+}
