@@ -1,36 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Угости кофе, если хочешь</title>
-  <link rel="shortcut icon" href="./Image/title icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="header_links">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Регистрация</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="header_body">
-    <h1 class="main_greeting">Привет друг!</h1>
-    <p>Здесь ты сможешь поддержать человека, который этого достоин</p>
-    <img class="cupCoffe_main" src="./Image/Image Coffee main.svg">
-
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Мой сайт. Все права защищены.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Угости кофе, если хочешь</title>
+    <link
+      rel="shortcut icon"
+      href="./Image/title icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <ul class="header_links">
+          <li class="header_link-item"><a class="header_link" href="#">Войти</a></li>
+          <li class="header_link-item-"><a class="header_link" href="#">Регистрация</a></li>
+          <li class="header_link-item"><a class="header_link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="header_body">
+      <div>
+        <h1 class="greeting">Привет друг!</h1>
+        <p class="greeting-text">
+          Здесь ты можешь поддержать человека, который этого достоин!
+        </p>
+      </div>
+      <img class="img_cupCoffee" src="./Image/Image Coffee main.svg" />
+      <div class="container">
+        <h1></h1>
+        <form class="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="email"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h2>Thank You!</h2>
+          <p>Your form has been submitted successfully.</p>
+          <button class="btn-close" id="btn-close">Close</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Мой сайт. Все права защищены.</p>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
