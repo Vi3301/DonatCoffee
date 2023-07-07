@@ -15,8 +15,8 @@
     <header class="header">
       <nav class="header_nav">
         <ul class="header_links">
-          <li class="header_link-item"><a class="header_link" href="#">Войти</a></li>
-          <li class="header_link-item-"><a class="header_link" href="#">Регистрация</a></li>
+          <li class="header_link-item"><a class="header_link header_link_entrance" href="#">Войти</a></li>
+          <li class="header_link-item"><a class="header_link" href="#">Регистрация</a></li>
           <li class="header_link-item"><a class="header_link" href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -24,17 +24,19 @@
     <main class="header_body">
       <div>
         <h1 class="greeting">Привет друг!</h1>
-        <p class="greeting-text">
+        <p class="greeting_text">
           Здесь ты можешь поддержать человека, который этого достоин!
         </p>
       </div>
-      <img class="img_cupCoffee" src="./Image/Image Coffee main.svg" />
-      <div class="container">
+      <img class="greeting_img-cupCoffee" src="./Image/Image Coffee main.svg" />
+      <div class="popup_container">
+      <div class="form_container">
         <h1></h1>
         <form class="form">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input
+            <input 
+              class="form_input-name"
               type="text"
               id="name"
               name="name"
@@ -43,8 +45,9 @@
             />
           </div>
           <div class="form-group">
-            <label for="password">Password:</label>
+            <label class="form-group_label" for="password">Password:</label>
             <input
+              class="form_input-password"
               type="password"
               id="password"
               name="email"
@@ -52,19 +55,20 @@
               required
             />
           </div>
-          <button type="submit" class="btn-submit">Submit</button>
+          <button type="submit" class="form_btn-submit">Submit</button>
         </form>
       </div>
+      </div>
       <div class="popup" id="popup">
-        <div class="popup-content">
-          <h2>Thank You!</h2>
-          <p>Your form has been submitted successfully.</p>
-          <button class="btn-close" id="btn-close">Close</button>
+        <div class="popup_content">
+          <h2 class="popup_title">Thank You!</h2>
+          <p class="popup_paragraph">Your form has been submitted successfully.</p>
+          <button class="popup_btn-close" id="btn-close">Close</button>
         </div>
       </div>
     </main>
-    <footer>
-      <p>&copy; 2023 Мой сайт. Все права защищены.</p>
+    <footer class="footer">
+      <p class="footer_text">&copy; 2023 Мой сайт. Все права защищены.</p>
     </footer>
     <script src="./script/script.js"></script>
   </body>

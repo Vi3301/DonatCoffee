@@ -3,7 +3,7 @@
 body {
   font-family: "Playfair Display", serif;
 }
-.img_cupCoffee {
+.greeting_img-cupCoffee {
   margin-top: 182px;
   margin-right: 552px;
 }
@@ -30,27 +30,49 @@ body {
   flex-flow: row;
   justify-content: end;
 }
-.header_links li {
+.header_link-item {
   list-style-type: none;
   margin-right: 20px;
 }
-.header_links a {
+.header_link {
   text-decoration: none;
   color: black;
 }
-.greetin-text {
+.greeting_text {
   margin-left: 255px;
   font-size: 28px;
 }
-.container {
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
   max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  width: 40%;
+  height: 40%;
+}
+.popup_container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 .form {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 .form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -59,15 +81,17 @@ label {
   font-weight: bold;
 }
 
-input,
+.form_input-name,
 textarea {
-  width: 100%;
+  width: 80%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-.btn-submit {
+.form_input-password {
+  width: 80%;
+}
+.form_btn-submit {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -87,7 +111,7 @@ textarea {
   z-index: 9999;
 }
 
-.popup-content {
+.popup_content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,7 +121,7 @@ textarea {
   text-align: center;
 }
 
-.btn-close {
+.popup_btn-close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
