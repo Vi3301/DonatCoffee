@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func handleHttpRequest(w http.ResponseWriter, r *http.Request) {

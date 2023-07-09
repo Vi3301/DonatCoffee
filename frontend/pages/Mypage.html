@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Угости кофе, если хочешь</title>
+    <link
+      rel="shortcut icon"
+      href="./Image/title icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/Main style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <ul class="header_links">
+          <li class="header_link-item"><a class="header_link" href="#">Главная</a></li>
+          <li class="header_link-item"><a class="header_link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="body">
+      <div class="image_container">
+        <img class="image_picture" src="../Image/Test picture.png">
+      </div>
+      <div class="Tape">
+      <div class="news-tape">
+        <textarea class="news-tape_text">Новости</textarea>
+      </div>
+      <div class="support-pay">
+        <p class="support-pay_paragraph">Купить Илье кофе</p>
+        <div class="support-pay_container">
+          <div class="support-pay_form">
+            <img class="support-pay_image" src="../Image/a-cup-of-tea on support-pay.svg" >
+            <label for="fileInput">
+              <img class="support-pay_icon" src="../Image/one-coffee.svg">
+              <input class="support-pay_input" type="text" id="fileInput">
+            </label>
+            <label for="fileInput">
+              <img class="support-pay_icon" src="../Image/one-coffee.svg">
+              <input class="support-pay_input" type="text" id="fileInput">
+            </label>
+            <label for="fileInput">
+              <img class="support-pay_icon" src="../Image/one-coffee.svg">
+              <input class="support-pay_input" type="text" id="fileInput">
+            </label>
+            <label for="fileInput">
+              <input class="support-pay_input__users support-pay_input " type="text" placeholder="  10" id="quantity">
+            </label>
+          </div>
+          <form class="support-text" action="/your-server-endpoint" method="post">
+            <label for="input-data_name"></label><br>
+            <textarea class="input-data" type="text" id="input-name" name="inputName" placeholder="Имя или твой никнейм"></textarea><br>
+            <label for="input-data_text"></label><br>
+            <textarea class="input-data input-data_text" type="text" id="input-text" placeholder="Сообщение получателю" name="inputText"></textarea><br>
+            <input class="input-data_submit-button" type="submit" value="Поддержать">
+          </form>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="footer">
+      <p class="footer_text">&copy; 2023 Мой сайт. Все права защищены.</p>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
