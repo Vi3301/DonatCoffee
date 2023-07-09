@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const registerButton = document.getElementById("registerButton")
   const popupContainer = document.querySelector(".popup_container");
   const submitButtonForm = document.querySelector(".form_btn-submit");
   const formContainer = document.querySelector(".form_container");
@@ -7,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.getElementById("btn-close");
   const entranceButton = document.querySelector(".header_link_entrance");
   const closeIconForm = document.querySelector(".popup_close-form-icon");
+  
   function openForm() {
     popupContainer.style.display = "flex";
   }
-
   function closeForm() {
     popupContainer.style.display = "none";
   }
@@ -27,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error", error);
       });
   }
+  
   closeButton.addEventListener("click", function () {
     popup.style.display = "none";
   });
+  registerButton.addEventListener("click", openForm)
   submitButtonForm.addEventListener("click", submitUser);
   closeIconForm.addEventListener("click", closeForm);
   form.addEventListener("submit", submitForm);
